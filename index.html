@@ -1,0 +1,149 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Graph</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <!--.header clearfix started-->
+  <div class="header clearfix">
+    <!--.wrapper clearfix started -->
+    <div class="wrapper clearfix">
+      <!--.left started-->
+      <div class="left">
+        <h1 class="location">&nbsp;</h1>
+        <h1 class="time">&nbsp;</h1>
+      </div>        
+      <!--.left ended-->
+      <form name="location-input">
+        <label></label>
+        <input type="text"
+               name="location"
+               id="location-input"
+               placeholder="Type any city name...."
+               autocomplete="off">
+        <!--#location-results started-->
+        <div id="location-results">
+          
+        </div>
+        <!--#location-results ended-->
+      </form>
+    </div>
+    <!--.wrapper clearfix ended-->
+  </div>
+  <!--.header clearfix ended-->
+
+  <!--.wrapper clearfix started -->
+  <div class="wrapper clearfix">
+    <!--.row clearfix started -->
+    <div class="row clearfix">
+      <!--.graph started -->
+      <div class="graph">
+        <!--.placeholder clearfix started -->
+        <div class="placeholder clearfix"></div>
+        <!--#graph started -->
+        <div id="graph">
+          <svg height="501.25" width="802"></svg> 
+        </div>
+        <!--#graph ended -->
+        <!-- .row clearfix started #simple-forecast started-->
+        <div class="row clearfix" id="simple-forecast">
+          <!-- .simple started -->
+          <div class="simple">
+            <!-- .panel started -->
+            <div class="panel">
+              <h3>-</h3>
+              <h2>N/A</h2>
+              <h4>Chance of Rain</h4>
+            </div>
+            <!-- .panel ended -->
+          </div>
+          <!-- .simple ended -->
+          <!-- .simple started -->
+          <div class="simple">
+            <!-- .panel started -->
+            <div class="panel">
+              <h3>-</h3>
+              <h2>N/A</h2>
+              <h4>Chance of Rain</h4>
+            </div>
+            <!-- .panel ended -->
+          </div>
+          <!-- .simple ended -->
+          <!-- .simple started -->
+          <div class="simple">
+            <!-- .panel started -->
+            <div class="panel">
+              <h3>-</h3>
+              <h2>N/A</h2>
+              <h4>Chance of Rain</h4>
+            </div>
+            <!-- .panel ended -->
+          </div>
+          <!-- .simple ended --><!-- .simple started -->
+          <div class="simple">
+            <!-- .panel started -->
+            <div class="panel">
+              <h3>-</h3>
+              <h2>N/A</h2>
+              <h4>Chance of Rain</h4>
+            </div>
+            <!-- .panel ended -->
+          </div>
+          <!-- .simple ended -->
+        </div>
+        <!-- .row clearfix started #simple-forecast ended-->
+      </div>
+      <!--.graph ended -->
+      <!--.sidebar clearfix started -->
+      <div class="sidebar clearfix">
+        <table id="three-day-weather">
+        </table>
+      </div> 
+      <!--.sidebar clearfix ended -->
+    </div>
+  </div>
+  <!--.hourly-section started -->
+  <div class="hourly-section">
+    <!--.wrapper clearfix started -->
+    <div class="wrapper clearfix">
+      <!--.row clearfix started -->
+      <div class="row clearfix">
+        <!--.hourly-wrapper started -->
+        <div class="hourly-wrapper">
+          <h1></h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Temp</th>
+                <th>Conditions</th>
+                <th>Humidity and Wind</th>
+                <th>Precipitation</th>
+              </tr>
+            </thead>
+            <tbody id="hourly-forecast">
+            </tbody>
+          </table>
+        </div>
+        <!--.hourly-wrapper ended -->
+      </div>
+      <!--.row clearfix ended -->
+    </div>
+    <!--.wrapper clearfix ended -->
+   </div> 
+   <!--.hourly-section ended -->
+
+   <!--.footer started -->
+  <div class="footer">
+  </footer>
+  <!--.footer ended -->
+  <script src="js/d3.min.js"></script>
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/jquery.formatDateTime.js"></script>
+  <script src="js/weather-predictor-wunderground-client.js"></script>
+</body>
+</html>
